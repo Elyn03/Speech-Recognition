@@ -22,9 +22,9 @@ recognition.addEventListener('result', (event) => {
    resultElement.textContent = result;
 
    if(result.indexOf("ose") !== -1){
-      body.style.backgroundColor = "#DB7093"
+      body.style.backgroundColor = "#FFC0CB"
       console.log
    } else{
-      body.style.backgroundColor = "#C71585"
+      body.style.backgroundColor = "#DB7093"
    }
 });
