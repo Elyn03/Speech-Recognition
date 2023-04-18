@@ -21,10 +21,14 @@ recognition.addEventListener('result', (event) => {
    const result = event.results[event.results.length - 1][0].transcript;
    resultElement.textContent = result;
 
-   if(result.indexOf("ose") !== -1){
-      body.style.backgroundColor = "#FFC0CB"
+   if(result.indexOf("lapin") !== -1 || result.indexOf("Lapin") !== -1){
+      body.style.backgroundImage = "none"
+      body.style.backgroundImage = "url(\"rabbit.jpg\")"
+      body.style.backgroundSize = "cover"
       console.log
    } else{
-      body.style.backgroundColor = "#DB7093"
+      body.style.backgroundImage = "none"
+      body.style.backgroundColor = "#FFB2B2"
    }
+
 });
